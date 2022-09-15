@@ -11,12 +11,13 @@ function App() {
   const isMainPath = useLocation().pathname;
   const navigate = useNavigate();
   const condition = isMainPath === "/" || isMainPath==="/my-portfolio/";
+
   useEffect(() => {
-    if (condition) {
+    
       navigate("/aboutme");
-    }
+    
     console.log(isMainPath);
-  }, condition);
+  });
 
   return (
     <div className="flex bg-gray-900">
