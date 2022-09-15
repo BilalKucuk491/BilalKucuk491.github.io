@@ -13,10 +13,9 @@ function App() {
   const condition = isMainPath === "/" || isMainPath==="/my-portfolio/";
 
   useEffect(() => {
-    
+      if (condition) {
       navigate("/aboutme");
-    
-    console.log(isMainPath);
+    }
   },condition);
 
   return (
@@ -24,7 +23,6 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/projects" element={<Works />} />
-        <Route path="/my-portfolio/" element={<Aboutme />} />
         <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
