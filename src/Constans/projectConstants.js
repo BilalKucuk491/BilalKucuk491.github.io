@@ -32,15 +32,15 @@ export const projectConstants = [
     projectLiveUrl:""
   },
   {
-    projectName: "React Hooks",
-    projectImageSource: imageSource("react-hooks"),
-    projectSourceUrl: "https://github.com/BilalKucuk491/react-hooks",
+    projectName: "Youtube Clone",
+    projectImageSource: imageSource("youtube-homepage"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/youtube-home-page-clone",
     projectLiveUrl:""
   },
   {
-    projectName: "Lead Tracker",
-    projectImageSource: imageSource("lead-tracker"),
-    projectSourceUrl: "https://github.com/BilalKucuk491/Lead-Tracker/tree/main/Tracker",
+    projectName: "Javascript Examples",
+    projectImageSource: imageSource("javascript-examples"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/Simple-Javascript-Projects",
     projectLiveUrl:""
   },
 ];
