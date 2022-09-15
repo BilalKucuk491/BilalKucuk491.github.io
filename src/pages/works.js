@@ -5,6 +5,7 @@ import Card from "../components/Card";
 export default function Works() {
   return (
     <div className="container my-12 mx-auto">
+      Merhaba
       <div className="flex flex-wrap mx-10 mt-10">
 
        {projectConstants.map((item,index)=>(
