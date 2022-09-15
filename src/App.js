@@ -19,7 +19,7 @@ function App() {
   }, isMainPath === "/");
 
   return (
-    <div className="flex bg-gray-800">
+    <div className="flex bg-gray-900">
       <Sidebar />
       <Routes>
         <Route path="/projects" element={<Works />} />
