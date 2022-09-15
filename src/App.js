@@ -10,13 +10,13 @@ import Blog404 from "./pages/Blog404";
 function App() {
   const isMainPath = useLocation().pathname;
   const navigate = useNavigate();
-  const contion = isMainPath === "/" || isMainPath==="/my-portfolio/";
+  const condition = isMainPath === "/" || isMainPath==="/my-portfolio/";
   useEffect(() => {
-    if (contion) {
+    if (condition) {
       navigate("/aboutme");
     }
     console.log(isMainPath);
-  }, contion);
+  }, condition);
 
   return (
     <div className="flex bg-gray-900">
