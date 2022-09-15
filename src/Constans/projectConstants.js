@@ -3,37 +3,44 @@ const imageSource = (path) => `${process.env.PUBLIC_URL}/images/${path}.png`;
 export const projectConstants = [
   {
     projectName: "Instagram Clone",
-    projectUrl: "https://github.com/BilalKucuk491/instagram-react-clone",
-    projectImageSource: imageSource("instagram-login")
+    projectImageSource: imageSource("instagram-login"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/instagram-react-clone",
+    projectLiveUrl:"https://instagram-react-web-clone.netlify.app/"
   },
   {
     projectName: "Brand Colors",
-    projectUrl: "https://github.com/BilalKucuk491/react-brand-colors",
-    projectImageSource: imageSource("brand-colors")
+    projectImageSource: imageSource("brand-colors"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/react-brand-colors",
+    projectLiveUrl:"https://react-brand-colors-1.netlify.app/"
   },
   {
     projectName: "Mini Javascript Projects",
-    projectUrl: "https://github.com/BilalKucuk491/Simple-Javascirpt-Projects",
-    projectImageSource: imageSource("simple-javascript-projects")
+    projectImageSource: imageSource("simple-javascript-projects"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/Simple-Javascirpt-Projects",
+    projectLiveUrl:""
   },
   {
     projectName: "React Hooks",
-    projectUrl: "https://github.com/BilalKucuk491/react-hooks",
-    projectImageSource: imageSource("react-hooks")
+    projectImageSource: imageSource("react-hooks"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/react-hooks",
+    projectLiveUrl:""
   },
   {
     projectName: "Lead Tracker",
-    projectUrl: "https://github.com/BilalKucuk491/Lead-Tracker/tree/main/Tracker",
-    projectImageSource: imageSource("lead-tracker")
+    projectImageSource: imageSource("lead-tracker"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/Lead-Tracker/tree/main/Tracker",
+    projectLiveUrl:""
   },
   {
     projectName: "React Hooks",
-    projectUrl: "https://github.com/BilalKucuk491/react-hooks",
-    projectImageSource: imageSource("react-hooks")
+    projectImageSource: imageSource("react-hooks"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/react-hooks",
+    projectLiveUrl:""
   },
   {
     projectName: "Lead Tracker",
-    projectUrl: "https://github.com/BilalKucuk491/Lead-Tracker/tree/main/Tracker",
-    projectImageSource: imageSource("lead-tracker")
+    projectImageSource: imageSource("lead-tracker"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/Lead-Tracker/tree/main/Tracker",
+    projectLiveUrl:""
   },
 ];

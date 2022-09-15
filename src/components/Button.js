@@ -7,7 +7,7 @@ export default function Button({ name, pathName = "/" }) {
     <NavLink
       to={pathName}
       className={({ isActive }) =>
-        isActive
+        isActive && pathName !=="/"
           ? "flex text-white border-gray-600 bg-neon_green h-16 items-center justify-center border transition-colors"
           : "flex text-cream border-gray-600 h-16 items-center justify-center border hover:bg-gray-700 hover:text-neon_green transition-colors"
       }

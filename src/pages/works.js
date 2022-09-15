@@ -11,7 +11,7 @@ export default function Works() {
          <div key={index} className={classNames({
           "w-full md:w-1/3 lg:w-1/4 m-10":true,
         })}>
-          <Card source={item.projectImageSource}/>
+          <Card projectSourceUrl={item.projectSourceUrl} projectLiveUrl={item.projectLiveUrl} imageSource={item.projectImageSource}/>
         </div>
           
        ))}
