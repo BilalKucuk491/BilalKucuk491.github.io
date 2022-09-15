@@ -10,7 +10,7 @@ import Blog404 from "./pages/Blog404";
 function App() {
   const isMainPath = useLocation().pathname;
   const navigate = useNavigate();
-  const contion = isMainPath === "/" || isMainPath==="/my-portfolio";
+  const contion = isMainPath === "/" || isMainPath==="/my-portfolio/";
   useEffect(() => {
     if (contion) {
       navigate("/aboutme");
