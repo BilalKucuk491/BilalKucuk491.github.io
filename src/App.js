@@ -17,13 +17,14 @@ function App() {
       navigate("/aboutme");
     
     console.log(isMainPath);
-  });
+  },condition);
 
   return (
     <div className="flex bg-gray-900">
       <Sidebar />
       <Routes>
         <Route path="/projects" element={<Works />} />
+        <Route path="/my-portfolio/" element={<Aboutme />} />
         <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
