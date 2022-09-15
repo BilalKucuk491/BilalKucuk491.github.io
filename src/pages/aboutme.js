@@ -1,5 +1,5 @@
 import Icon from "../components/Icon";
-import { contactConstants } from "../Constans/contactConstants";
+import { contactConstants } from "../constans/contactConstants";
 
 export default function Aboutme() {
   return (

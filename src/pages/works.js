@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { projectConstants } from "../Constans/projectConstants";
+import { projectConstants } from "../constans/projectConstants";
 import Card from "../components/Card";
 
 export default function Works() {
