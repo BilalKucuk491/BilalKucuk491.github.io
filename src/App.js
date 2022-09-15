@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Sidebar from "./components/Sidebar";
+import Works from "./pages/works";
+import { Routes, Route} from "react-router-dom";
+import Aboutme from "./pages/aboutme";
+import Contact from "./pages/contact";
+import Blog from "./pages/blog";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex bg-gray-900">
+    <Sidebar/>
+
+      <Routes>
+        <Route path="/projects" element={<Works />} />
+        <Route path="/aboutme" element={<Aboutme />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+      {console.log("deneme")}
+      </Routes>
     </div>
   );
 }

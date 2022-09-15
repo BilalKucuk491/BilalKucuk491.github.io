@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 200px;
+}
+
+.container .ring {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: -20px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  top: -10px;
+  border-top: 7px solid #24ecff;
+  animation: animate 4s linear infinite;
+  box-shadow: none;
+
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container .ring::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: #24ecff;
+  border-radius: 50%;
+  box-shadow: 
+  0 0 0 5px #24ecff44,
+  0 0 0 10px #24ecff33,
+  0 0 0 20px #24ecff22,
+  0 0 0 30px #24ecff11,
+  0 0 0 40px #24ecff00;
+}
+.container .ring:nth-child(2) {
+  animation: animate2 4s linear infinite;
+  animation-delay: -2s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #93ff2d;
+
+}
+
+.container .ring:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  background: #93ff2d;
+  border-radius: 50%;
+  box-shadow: 
+  0 0 0 5px #93ff2d44,
+  0 0 0 10px #93ff2d33,
+  0 0 0 20px #93ff2d22,
+  0 0 0 30px #93ff2d11,
+  0 0 0 40px #93ff2d00;
+}
+
+@keyframes animate2{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.container .ring:nth-child(3) {
+  animation: animate2 4s linear infinite;
+  animation-delay: -3s;
+  position: absolute;
+  top: 150px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #e41cf8;
+
+}
+.container .ring:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  bottom: initial;
+  bottom: 0px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: #e41cf8;
+  border-radius: 50%;
+  box-shadow: 
+  0 0 0 5px #e41cf844,
+  0 0 0 10px #e41cf833,
+  0 0 0 20px #e41cf822,
+  0 0 0 30px #e41cf811,
+  0 0 0 40px #e41cf800;
+}
+.container p {
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 100px;
+}
