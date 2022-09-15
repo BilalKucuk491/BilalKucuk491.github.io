@@ -4,6 +4,7 @@ export default function Card({
   imageSource = "",
   projectSourceUrl = "",
   projectLiveUrl = "",
+  projectName=""
 }) {
   const isSource = projectSourceUrl !== "";
   const isLiveSource = projectLiveUrl !== "";
@@ -27,6 +28,13 @@ export default function Card({
     <>
       <div className="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
         <img className="w-72 h-48 object-cover" src={imageSource} alt="" />
+
+
+        <div className="mt-4 bg-white">
+          <div className="flex items-center justify-center">
+            {projectName}        
+          </div>
+        </div>
 
         <div className="p-5 gap-3 bg-white">
           <div className="flex items-center gap-2">
@@ -52,6 +60,7 @@ export default function Card({
             </button>
           </div>
         </div>
+        
       </div>
     </>
   );
