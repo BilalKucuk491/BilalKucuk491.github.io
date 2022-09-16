@@ -30,11 +30,13 @@ export default function Card({
         <img className="w-72 h-48 object-cover" src={imageSource} alt="" />
 
 
-        <div className="mt-4 bg-white">
+      <div className="border-t-8 border-neon_green">
+      <div className="mt-4">
           <div className="flex items-center justify-center">
             {projectName}        
           </div>
         </div>
+      </div>
 
         <div className="p-5 gap-3 bg-white">
           <div className="flex items-center gap-2">
