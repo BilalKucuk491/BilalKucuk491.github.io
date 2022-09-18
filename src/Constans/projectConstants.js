@@ -8,6 +8,12 @@ export const projectConstants = [
     projectLiveUrl:"https://instagram-react-web-clone.netlify.app/"
   },
   {
+    projectName: "Responsive Page",
+    projectImageSource: imageSource("responsive-page"),
+    projectSourceUrl: "https://github.com/BilalKucuk491/responsive-website",
+    projectLiveUrl:"https://responsive-website-bilal.netlify.app/"
+  },
+  {
     projectName: "Brand Colors",
     projectImageSource: imageSource("brand-colors"),
     projectSourceUrl: "https://github.com/BilalKucuk491/react-brand-colors",
